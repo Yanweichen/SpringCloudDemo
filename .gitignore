@@ -24,7 +24,7 @@ hs_err_pid*
 /common/
 /logs/
 /.idea/
-/.gradle/
+/**/.gradle/
 classes/
 build/
 out/
