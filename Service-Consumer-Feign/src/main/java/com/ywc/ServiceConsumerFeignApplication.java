@@ -27,6 +27,7 @@ public class ServiceConsumerFeignApplication {
 
 	@RequestMapping(value = "/hi",method = RequestMethod.GET)
 	public String sayHi(@RequestParam String name){
+		System.out.println("feign");
 		return testService.sayHiFromClientOne(name);
 	}
 

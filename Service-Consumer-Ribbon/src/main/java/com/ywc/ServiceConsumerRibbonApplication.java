@@ -33,6 +33,7 @@ public class ServiceConsumerRibbonApplication {
 
 	@RequestMapping(value = "/hi")
 	public String hi(@RequestParam String name){
+		System.out.println("ribbon");
 		return testService.hiService(name);
 	}
 
