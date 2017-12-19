@@ -1,7 +1,8 @@
 rootProject.name = 'SpringCloudDemo'
 
-include 'Service-Ribbon'
-include 'SpringCloudClient'
-include 'SpringCloudClient2'
-include 'SpringCloudServer'
-include 'Service-Feign'
+include 'Service-Consumer-Ribbon'
+include 'Service-Provider-One'
+include 'Service-Provider-Two'
+include 'Service-Register'
+include 'Service-Consumer-Feign'
+include 'Service-Zuul'
