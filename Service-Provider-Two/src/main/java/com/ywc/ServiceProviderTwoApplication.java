@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @EnableEurekaClient
 @SpringBootApplication
-public class SpringCloudClient2Application {
+public class ServiceProviderTwoApplication {
 
 	@Value("${server.port}")
 	String port;
@@ -22,6 +22,6 @@ public class SpringCloudClient2Application {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudClient2Application.class, args);
+		SpringApplication.run(ServiceProviderTwoApplication.class, args);
 	}
 }
