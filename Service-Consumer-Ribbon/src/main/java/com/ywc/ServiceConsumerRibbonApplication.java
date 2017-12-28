@@ -1,6 +1,7 @@
 package com.ywc;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
@@ -35,6 +36,14 @@ public class ServiceConsumerRibbonApplication {
 	public String hi(@RequestParam String name){
 		System.out.println("ribbon");
 		return testService.hiService(name);
+	}
+
+	@Value("${foo}")
+	String foo;
+
+	@RequestMapping(value = "/test/config")
+	public String hi(){
+		return foo;
 	}
 
 	public static void main(String[] args) {
